@@ -6,12 +6,11 @@
 /*   By: jungyang <jungyang@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/25 17:53:55 by jungyang          #+#    #+#             */
-/*   Updated: 2021/09/27 04:03:25 by jungyang         ###   ########.fr       */
+/*   Updated: 2021/09/27 04:18:17 by jungyang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
 void	ft_putchar(char c)
 {
@@ -109,12 +108,4 @@ void	*ft_print_memory(void *addr, unsigned int size)
 		char_addr += 16;
 	}
 	return (addr);
-}
-
-int	main(void)
-{
-	char	*str;
-
-	str = "Bonjour les aminches...c est fou.tout.ce qu on peut faire avec...print_memory....lol.lol. .";
-	ft_print_memory(str, 92);
 }
